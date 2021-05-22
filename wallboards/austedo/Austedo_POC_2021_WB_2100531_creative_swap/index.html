@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Austero Animated Wallboard</title>
+	<!--Project animation and ISI-->
+	<script src="scripts/lib/gsap.min.js"></script>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+		<div class="header">
+			<div class="header_logo"></div>
+			<p class="header_text"><span>for the treatment of</span><br />tardive dyskinesia (TD) in adults</p>
+		</div>
+
+		<main id="main" class="content">
+			<!-- Slide 1 -->
+			<div class="slide slide1" id="image1">
+				<img class="layer-1-hero" src="images/layer-1.jpg" >
+				<div id="text1"> <!-- animate -->
+					<div id="layer-1-text" class="layer-1-text"> <!-- animate -->
+						<p>If you're managing<br/></p>
+						<span class="span">your mental health...</span>
+					</div>
+				</div>
+				<div id="text2"> <!-- animate -->
+					<div id="layer-2-text" class="layer-2-text"> <!-- animate -->
+						<p class="first-line">...and experience </p>
+						<p class="second-line">unintentional movements...</p>
+					</div>
+				</div>
+				<div class="disclaimer">
+					Model is not an actual patient
+				</div>
+			</div>
+
+			<!-- Slide 3 -->
+			<div class="slide slide3" id="image3"> <!-- animate -->
+				<img class="layer-3-hero" src="images/layer-3.jpg" >
+				<div class="slide3-text">
+					<div class="not-ok"></div> <!-- animate -->
+					<div class="layer-3-text">
+						<p class="text3 line1"> <!-- animate -->
+							&nbsp;&nbsp;it's time to&nbsp;&nbsp;
+						</p>
+						<p class="text3 line2"> <!-- animate -->
+							&nbsp;&nbsp;treat TD&nbsp;&nbsp;
+						</p>
+					</div>
+				</div>
+				<div class="disclaimer">
+					Model is not an actual patient
+				</div>
+			</div>
+
+			<!--Slide 4-->
+			<div class="slide slide4" id="image4"> <!-- animate -->
+				<img class="layer-4-img" src="images/blue.png">
+				<div class="layer-4-text">
+                    <div class="layer-4-highlight first"></div> <!-- animate -->
+                    <div class="layer-4-highlight second"></div> <!-- animate -->
+					<p id="text4">
+						<span>AUSTEDO</span>
+						<span>(deutetrabenazine)<br/></span>
+						<span>tablets</span>
+						<span>reduced</span>
+						<span>TD</span>
+						<span>symptoms<br/></span>
+						<span>while</span>
+						<span>people</span>
+						<span class="bold">continued</span>
+						<span class="bold">on</span>
+						<span class="bold">most<br/></span>
+						<span class="bold">mental</span>
+						<span class="bold">health</span>
+						<span class="bold">medications.</span>
+                    </p>
+				</div>
+
+			</div>
+
+		</main>
+
+		<div class="footer">
+			<div id="footer_cover"></div>
+			<div class="footer_container">
+				<div id="footerText1" class="footer_container-text">Talk to your doctor about your uncontrollable
+					 <br/>movements and AUSTEDO. Create your doctor <br/> discussion guide at TreatTDMovements.com.</div>
+					 <a class="prepare-cta" onClick="goDocguide();"><div id="footerText2" class="footer_cta">Prepare for the conversation</div></a>
+			</div>
+		</div>
+
+		<div id="isi_container" class="isi_container">
+			<div class="isi_container-header">
+				<div data-state="closed" id="expandBtn" class="isi_container-header--expand"><div>EXPAND IMPORTANT SAFETY INFORMATION</div></div>
+			</div>
+
+			<div id="isi_container-content" class="isi_container-content">
+				<div class="isi_container-content--text">
+
+					<h1>IMPORTANT SAFETY INFORMATION</h1>
+
+					<p><span>AUSTEDO can cause serious side effects in people with Huntington’s disease, including: depression, suicidal thoughts, or suicidal actions.</span> <strong>Do not</strong> start taking AUSTEDO if you are depressed (have untreated depression or depression that is not well controlled by medicine) <strong>or</strong> have suicidal thoughts. Pay close attention to any changes, especially sudden changes, in mood, behaviors, thoughts or feelings. This is especially important when AUSTEDO is started and when the dose is changed. Call your healthcare provider right away if you become depressed, have unusual changes in mood or behavior, or have thoughts of suicide.</p>
+					<p><span>Do not take AUSTEDO if you:</span></p>
+					<ul>
+						<li>have Huntington’s disease and are depressed or have thoughts of suicide.</li>
+						<li>have liver problems.</li>
+						<li>are taking a monoamine oxidase inhibitor (MAOI) medicine. <strong>Do not</strong> take an MAOI within 14 days after you stop taking AUSTEDO. <strong>Do not</strong> start AUSTEDO if you stopped taking an MAOI in the last 14 days. Ask your healthcare provider or pharmacist if you are not sure.</li>
+						<li>are taking reserpine. <strong>Do not</strong> take medicines that contain reserpine (such as Serpalan<sup>&reg;</sup> and Renese<sup>&reg;</sup>-R) with AUSTEDO. If your healthcare provider plans to switch you from taking reserpine to AUSTEDO, you must wait at least 20 days after your last dose of reserpine before you start taking AUSTEDO.</li>
+						<li>are taking tetrabenazine (Xenazine<sup>&reg;</sup>). If your healthcare provider plans to switch you from tetrabenazine (Xenazine<sup>&reg;</sup>) to AUSTEDO, take your first dose of AUSTEDO on the day after your last dose of tetrabenazine (Xenazine<sup>&reg;</sup>).</li>
+						<li>are taking valbenazine (Ingrezza<sup>&reg;</sup>).</li>
+					</ul>
+
+					<p><span>Other possible serious side effects include:</span></p>
+					<ul>
+						<li><span>Irregular heartbeat (QT prolongation).</span> AUSTEDO increases your chance of having certain changes in the electrical activity in your heart. These changes can lead to a dangerous abnormal heartbeat. Taking AUSTEDO with certain medicines may increase this chance.</li>
+						<li><span>Neuroleptic Malignant Syndrome.</span> Call your healthcare provider right away and go to the nearest emergency room if you develop these signs and symptoms that do not  have another obvious cause: high fever, stiff muscles, problems thinking, very fast or uneven heartbeat, or increased sweating.</li>
+						<li><span>Restlessness.</span> You may get a condition where you feel a strong urge to move. This is called akathisia.</li>
+						<li><span>Parkinsonism.</span> Symptoms include: slight shaking, body stiffness, trouble moving, trouble keeping your balance, or falls.</li>
+					</ul>
+
+					<p><span>Sleepiness (sedation) is a common side effect of AUSTEDO.</span> While taking AUSTEDO, do not  drive a car or operate dangerous machinery until you know how AUSTEDO affects you. Drinking alcohol and taking other drugs that may also cause sleepiness while you are taking AUSTEDO may increase any sleepiness caused by AUSTEDO.</p>
+					<p><span>The most common side effects of AUSTEDO in people with Huntington’s disease include</span> sleepiness (sedation), diarrhea, tiredness, and dry mouth.</p>
+					<p><span>The most common side effects of AUSTEDO in people with tardive dyskinesia include</span> inflammation of the nose and throat (nasopharyngitis) and problems sleeping (insomnia).</p>
+					<p>These are not all the possible side effects of AUSTEDO. Call your doctor for<br/> medical advice about side effects. You are encouraged to report side effects of prescription drugs to the FDA. Visit www.fda.gov/medwatch or call<br/> 1-800-FDA-1088.</p>
+
+					<h1>Approved Uses</h1>
+
+					<p><strong>AUSTEDO is a prescription medicine that is used to treat</strong> adults with movements in the face, tongue, or other body parts that cannot be controlled<br /> (tardive dyskinesia).</p>
+					<p>It is not known if AUSTEDO is safe and effective in children.</p>
+					<p><strong>Please read the Medication Guide in the full Prescribing Information for AUSTEDO.</strong></p>
+
+				</div>
+				<div class="isi_container-footer">
+					<div class="isi_container-footer-ctabar">
+						<a onClick="goPI();"><div class="isi_container-footer-ctabar--cta">
+							<div>Prescribing Information</div>
+						</div></a>
+						<a onClick="goMedguide();" class="med-guide-link"><div class="isi_container-footer-ctabar--cta">
+							<div>Medication Guide</div>
+						</div></a>
+					</div>
+					<div class="isi_container-footer-endcontent">
+						<img src="images/teva-logo.png" class="isi_container-footer-endcontent--image">
+					</div>
+					<p class="isi_container-footer-endcontent--text">
+						The brands listed are the registered trademarks of their respective owners.<br />
+						&copy; <strong>2021 Teva Neuroscience, Inc.</strong><br />
+						AUS-43378  04/2021
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+    <script src="scripts/main.js"> </script>
+</body>
+</html>
